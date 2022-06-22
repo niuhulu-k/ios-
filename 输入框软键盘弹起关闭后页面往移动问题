@@ -1,0 +1,9 @@
+onFocus={() => {
+            if (
+              document.documentElement.offsetHeight <=
+              document.documentElement.clientHeight &&
+              ['input', 'textarea'].includes(event.target.localName)
+            ) {
+              document.body.scrollIntoView() // 回顶部
+            }
+          }}
